@@ -1,9 +1,13 @@
-public class Node {
-    int data;
-    Node next;
+public class Node<T>{
+    T data;
+    Node<T> next;
 
-    Node(int x){
+    Node(T x){
         data = x;
+        next = null;
+    }
+    
+    Node(){
         next = null;
     }
 }
