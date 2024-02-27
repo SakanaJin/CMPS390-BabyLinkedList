@@ -13,6 +13,7 @@ public class Main{
             System.out.println();
             try{
                 switch(in){
+                    case 0: break;
                     case 1: System.out.print("append: ");
                             num = input.nextInt();
                             list.append(num);

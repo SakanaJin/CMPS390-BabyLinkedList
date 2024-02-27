@@ -61,11 +61,7 @@ public class LinkedList<E>{
         Node<E> node = getNode(index);
         return node.data;
     }
-
-    public int length(){//returns the length of the list
-        return length;
-    }
-
+    
     private Node<E> getNode(int n){//returns the node at index n
         Node<E> curr = front;
         if(n < 0 || n > length-1){
@@ -76,7 +72,7 @@ public class LinkedList<E>{
         }
         return curr;
     }
-
+    
     private Node<E> findTail(){//returns the last node in the list
         Node<E> curr = front;
         length = 0;
@@ -88,6 +84,10 @@ public class LinkedList<E>{
             length++;
         }
         return curr;
+    }
+    
+    public int length(){//returns the length of the list
+        return length;
     }
 
     public void showList(){//prints the list
