@@ -30,10 +30,9 @@ public class LinkedList<E>{
         else{
             beforeN = getNode(index-1);
         }
-        Node<E> afterN = beforeN.next;
+        n.next = beforeN.next;
         beforeN.next = n;
-        n.next = afterN;
-        if(afterN == null){
+        if(n.next == null){
             tail = n;
         }
         length++;
